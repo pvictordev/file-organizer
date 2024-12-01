@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 
 def organize_files(directory):
     categories = {
@@ -38,6 +39,9 @@ def organize_files(directory):
     print("Files have been organized.")
 
 if __name__ == "__main__":
-    target_directory = input("Enter the path of the directory to organize: ").strip()
-    organize_files(target_directory)
+    if len(sys.argv) > 1:
+        target_directory = sys.argv[1].strip()
+    else:
+        target_directory = os.getcwd()
 
+    organize_files(target_directory)

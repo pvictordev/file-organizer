@@ -15,11 +15,12 @@ This is a simple file organizer script. Run it whenever you feel your folder is 
 
 - Alternatively, you can download only the dist folder, open it in the terminal, and proceed from there
 
-3. Run the executable:
+3. Run the executable  
+   3.1 Enter the path of the directory to organize: /path/to/folder:
+   ```bash
+   ./main /path/to/folder
+   ```
+   3.2 Run the executable inside the folder where the binary is located
    ```bash
    ./main
-   ```
-4. Enter the path of the directory to organize:
-   ```bash
-   Enter the path of the directory to organize: /path/to/folder
    ```
